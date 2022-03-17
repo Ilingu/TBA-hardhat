@@ -4,43 +4,45 @@
 
 ## Contract Address
 
-`Polygon`: Not Deployed
+`Polygon`: Not Deployed Yet
 
-`Mumbai`: [0x636b61DA3EdD3E2340fF5420743A3C0c3f5e438e](https://mumbai.polygonscan.com/address/0x636b61DA3EdD3E2340fF5420743A3C0c3f5e438e)
-
-<hr/>
-
-`Ethereum`: Not Deployed
-
-`Ropsten`: [0x1777DdDb054A561c998ac630Dbb8049B10f803c0](https://ropsten.etherscan.io/address/0x1777DdDb054A561c998ac630Dbb8049B10f803c0)
-
-`Goerli`: [0x1777DdDb054A561c998ac630Dbb8049B10f803c0](https://goerli.etherscan.io/address/0x1777DdDb054A561c998ac630Dbb8049B10f803c0)
-
-`Rinkeby`: [0xbdeC225897584c52f397b6EAd21B51F738BE124b](https://rinkeby.etherscan.io/address/0xbdeC225897584c52f397b6EAd21B51F738BE124b)
-
-`Kovan`: [0x1777DdDb054A561c998ac630Dbb8049B10f803c0](https://kovan.etherscan.io/address/0x1777DdDb054A561c998ac630Dbb8049B10f803c0)
+`Mumbai`: [0xb3d1Bd4c8CFE57e453B79237337981b1F6c4fa62](https://mumbai.polygonscan.com/address/0xb3d1Bd4c8CFE57e453B79237337981b1F6c4fa62)
 
 <hr/>
 
-`BSC`: Not Deployed
+`Ethereum`: Not Deployed Yet
 
-`BSC_testnet`: []()
+`Ropsten`: [0xa62F4daFc89E1c94FB2D819d2BC315fd15c3b21C](https://ropsten.etherscan.io/address/0xa62F4daFc89E1c94FB2D819d2BC315fd15c3b21C)
 
-<hr/>
+`Goerli`: [0xa62F4daFc89E1c94FB2D819d2BC315fd15c3b21C](https://goerli.etherscan.io/address/0xa62F4daFc89E1c94FB2D819d2BC315fd15c3b21C)
 
-`Arbitrum`: Not Deployed
+`Rinkeby`: [0x987966335D5BAb745ea8644756DA59f97c1e22de](https://rinkeby.etherscan.io/address/0x987966335D5BAb745ea8644756DA59f97c1e22de)
 
-`Arbitrum_testnet`: []()
-
-<hr/>
-
-`Avalanche`: Not Deployed
-
-`Fuji`: []()
+`Kovan`: [0xa62F4daFc89E1c94FB2D819d2BC315fd15c3b21C](https://kovan.etherscan.io/address/0xa62F4daFc89E1c94FB2D819d2BC315fd15c3b21C)
 
 <hr/>
 
-`Fantom`: []()
+`BSC`: Not Deployed Yet
+
+`BSC_testnet`: [0xf1E1E138f6d827C62EECCadA87a65B530b33045C](https://testnet.bscscan.com/address/0xf1E1E138f6d827C62EECCadA87a65B530b33045C)
+
+<hr/>
+
+`Arbitrum`: Not Deployed Yet
+
+`Arbitrum_testnet`: [0x1777DdDb054A561c998ac630Dbb8049B10f803c0](https://testnet.arbiscan.io/address/0x1777DdDb054A561c998ac630Dbb8049B10f803c0)
+
+<hr/>
+
+`Avalanche`: Not Deployed Yet
+
+`Fuji`: [0x1777DdDb054A561c998ac630Dbb8049B10f803c0](https://testnet.snowtrace.io/address/0x1777DdDb054A561c998ac630Dbb8049B10f803c0)
+
+<hr/>
+
+`Fantom`: Not Deployed Yet
+
+`Fantom_testnet`: Not Deployed Yet
 
 ## Additional Info
 
