@@ -12,35 +12,35 @@
 
 `Ethereum`: Not Deployed
 
-`Ropsten`: Not Deployed
+`Ropsten`: [0x1777DdDb054A561c998ac630Dbb8049B10f803c0](https://ropsten.etherscan.io/address/0x1777DdDb054A561c998ac630Dbb8049B10f803c0)
 
-`Goerli`: Not Deployed
+`Goerli`: [0x1777DdDb054A561c998ac630Dbb8049B10f803c0](https://goerli.etherscan.io/address/0x1777DdDb054A561c998ac630Dbb8049B10f803c0)
 
-`Rinkeby`: Not Deployed
+`Rinkeby`: [0xbdeC225897584c52f397b6EAd21B51F738BE124b](https://rinkeby.etherscan.io/address/0xbdeC225897584c52f397b6EAd21B51F738BE124b)
 
-`Kovan`: Not Deployed
+`Kovan`: [0x1777DdDb054A561c998ac630Dbb8049B10f803c0](https://kovan.etherscan.io/address/0x1777DdDb054A561c998ac630Dbb8049B10f803c0)
 
 <hr/>
 
 `BSC`: Not Deployed
 
-`BSC_testnet`: Not Deployed
+`BSC_testnet`: []()
 
 <hr/>
 
 `Arbitrum`: Not Deployed
 
-`Arbitrum_testnet`: Not Deployed
+`Arbitrum_testnet`: []()
 
 <hr/>
 
 `Avalanche`: Not Deployed
 
-`Fuji`: Not Deployed
+`Fuji`: []()
 
 <hr/>
 
-`Fantom`: Not Deployed
+`Fantom`: []()
 
 ## Additional Info
 

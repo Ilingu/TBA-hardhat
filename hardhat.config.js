@@ -33,7 +33,7 @@ task("network", "print the network ur currently in", async () => {
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  solidity: "0.8.4",
+  solidity: "0.8.7",
   networks: {
     // Polygon
     polygon: NODES.POLYGON_NODE,
