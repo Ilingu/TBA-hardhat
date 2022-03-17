@@ -16,6 +16,19 @@ task("nodes", "prints all the project networks", () => {
   });
 });
 
+task("cmd_deploy", "print all cmd to deploy contract", () => {
+  const IterableNodes = Object.keys(NODES);
+  IterableNodes.forEach((NodeKey) => {
+    const name = NodeKey.toLowerCase().replace("_node", "");
+    console.log(`npx hardhat run scripts/deploy.js --network ${name}`);
+  });
+});
+
+task("network", "print the network ur currently in", async () => {
+  const Network = await hre.ethers.provider.getNetwork();
+  console.log(Network.name);
+});
+
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
@@ -36,7 +49,7 @@ module.exports = {
     bsc_testnet: NODES.BSC_TESTNET_NODE,
     // Arbitrum
     arbitrum: NODES.ARBITRUM_NODE,
-    arbitrum_rinkeby: NODES.ARBITRUM_TESTNET_NODE,
+    arbitrum_testnet: NODES.ARBITRUM_TESTNET_NODE,
     // Avalanche
     avalanche: NODES.AVALANCHE_NODE,
     fuji: NODES.FUJI_NODE,

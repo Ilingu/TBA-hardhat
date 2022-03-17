@@ -3,3 +3,4 @@ cache
 artifacts/build-info
 artifacts/contracts/*.dbg.json
 .env
+DeployCmd.txt

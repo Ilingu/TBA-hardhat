@@ -1,8 +1,6 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-// [ADDRESS]: 0xFF738C6988155096F9D912daB32D9C9eBB120B1C
-
 /* Add Oracle (Don't Work Well Yet: For Future Version)
     - [https://docs.witnet.io/smart-contracts/apis-and-http-get-post-oracle/make-a-get-request]
     - Make A req to Jikan to see if anime exist, if not: revert
