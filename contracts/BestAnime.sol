@@ -1,11 +1,15 @@
 //SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.7;
 
 /* Add Oracle (Don't Work Well Yet: For Future Version)
     - [https://docs.witnet.io/smart-contracts/apis-and-http-get-post-oracle/make-a-get-request]
     - Make A req to Jikan to see if anime exist, if not: revert
 */
 
+/// @title TheBestAnime Contract
+/// @author Ilingu (github/Ilingu)
+/// @notice Contract to carve your Best Anime on the Blockchain
+/// @dev - Keep Track Of The Current BestAnime, The Owner of Contract, The Owner of the current Best Anime, the last buy price of the current anime || receive and fallback function for donations || The Owner can retrieve 100% of the contract's balance || The "setBestAnime" function is to change the current anime, cannot be call by the owner and the EOA have to pay greeter than the last buy price || "TheBestAnime" function return all the information at once || Two Mode: ReadWrite/ReadOnly (Can only be change when the owner AND the ownerofcurrentBA decide it)
 contract BestAnimeContract {
   address private owner;
 

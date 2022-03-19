@@ -1,7 +1,7 @@
 {
   "name": "tba-hardhat",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.0-rc.1",
   "description": "Smart Contract of the TBA dApp",
   "author": "Ilingu",
   "license": "MIT",

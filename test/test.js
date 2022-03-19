@@ -7,12 +7,15 @@ let Contract, contract;
 let BEST_ANIME = "Sasaki To Miyano";
 
 // formatEther(1000000000000000000n) --> wei to eth
+// Accounts
+let [owner, addr1, addr2 /*, addr2, ... */] = [];
 
 describe("BestAnime", function () {
   beforeEach(async () => {
     Contract = await ethers.getContractFactory("BestAnimeContract");
     contract = await Contract.deploy(BEST_ANIME);
     await contract.deployed();
+    [owner, addr1, addr2] = await ethers.getSigners();
   });
 
   it("Should return the best anime in the world", async function () {
@@ -30,11 +33,6 @@ describe("BestAnime", function () {
     let LastBuyPrice = await GetLastBuyPrice();
     let OwnerBA = await GetOwnerBA();
     let Balance = await GetBalance();
-
-    // Accounts
-    const [owner, addr1 /*, addr2, ... */] = await ethers.getSigners();
-
-    // return console.log();
 
     // Test
     expect(LastBuyPrice).to.equal(0);
@@ -61,5 +59,34 @@ describe("BestAnime", function () {
     expect(Balance).to.equal(LastBuyPrice);
     expect(TheCurrentBestAnime).to.equal(BEST_ANIME);
     expect(OwnerBA).to.equal(addr1.address);
+  });
+
+  it("Should stop the contract", async function () {
+    expect(await contract.ContractState()).to.equal(0);
+    expect(await contract.OwnerReqStop()).to.equal(false);
+
+    await contract.requestReadOnly();
+
+    let setAnimeTx = await contract.connect(addr1).setBestAnime(BEST_ANIME, {
+      value: 1,
+    });
+    await setAnimeTx.wait();
+
+    expect(await contract.OwnerReqStop()).to.equal(true);
+    expect(await contract.ContractState()).to.equal(0);
+
+    await contract.connect(addr1).requestReadOnly();
+
+    expect(await contract.ContractState()).to.equal(1);
+
+    try {
+      setAnimeTx = await contract.connect(addr2).setBestAnime(BEST_ANIME, {
+        value: 2,
+      });
+      await setAnimeTx.wait();
+      expect(0).to.equal(1);
+    } catch (err) {
+      expect(0).to.equal(0);
+    }
   });
 });
