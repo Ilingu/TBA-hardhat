@@ -11,10 +11,9 @@ pragma solidity ^0.8.7;
 /// @notice Contract to carve your Best Anime on the Blockchain
 /// @dev - Keep Track Of The Current BestAnime, The Owner of Contract, The Owner of the current Best Anime, the last buy price of the current anime || receive and fallback function for donations || The Owner can retrieve 100% of the contract's balance || The "setBestAnime" function is to change the current anime, cannot be call by the owner and the EOA have to pay greeter than the last buy price || "TheBestAnime" function return all the information at once || Two Mode: ReadWrite/ReadOnly (Can only be change when the owner AND the ownerofcurrentBA decide it)
 contract BestAnimeContract {
-  address private owner;
+  address private immutable owner;
 
   string public BestAnime;
-
   address public OwnerOfBestAnime;
   uint256 public LastBuyPrice;
 
@@ -43,7 +42,7 @@ contract BestAnimeContract {
   event NewBestAnime(
     string NewBestAnime,
     uint256 NewBuyPrice,
-    address NewOwner
+    address indexed NewOwner
   );
 
   modifier onlyOwners() {
